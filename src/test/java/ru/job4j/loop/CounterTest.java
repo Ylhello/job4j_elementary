@@ -6,20 +6,20 @@ import static org.assertj.core.api.Assertions.assertThat;
 class CounterTest {
 
     @Test
-    void whenSumFrom0To7Then15() {
-        int start = 0;
-        int finish = 5;
-        int result = Counter.sum(start, finish);
-        int expected = 15;
+    void whenSumEvenNumbersFromOneToTenThenThirty() {
+        int start = 1;
+        int finish = 10;
+        int result = Counter.sumByEven(start, finish);
+        int expected = 30;
         assertThat(result).isEqualTo(expected);
     }
 
     @Test
-    void whenSumFrom8To0Then0() {
-        int start = 8;
-        int finish = 0;
-        int result = Counter.sum(start, finish);
-        int expected = 0;
+    void whenSumEvenNumbersFromMinusTwoToFiveThenFour() {
+        int start = -2;
+        int finish = 5;
+        int result = Counter.sumByEven(start, finish);
+        int expected = 4;
         assertThat(result).isEqualTo(expected);
     }
 }

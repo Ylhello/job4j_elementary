@@ -9,12 +9,12 @@ public class MathCalculator {
     }
 
     public static double sumSecondMultiply(double first, double second) {
-        return minus(first, second) + divide(first,second);
+        return minus(first, second) + divide(first, second);
     }
 
     public static double sumTotal(double first, double second) {
         return sum(first, second) + multiply(first, second) + minus(first, second)
-                + divide(first,second);
+                + divide(first, second);
     }
 
     public static void main(String[] args) {
